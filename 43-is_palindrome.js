@@ -49,6 +49,6 @@ let str3 = "able was I ere I saw elba"; // all lowercase, true
 // console.log("isStrictPalindrome: " + isStrictPalindrome(str2));
 // console.log("isStrictPalindrome: " + isStrictPalindrome(str3));
 
-console.log("isStrictPalindrome: " + isPalindrome(str));
-console.log("isStrictPalindrome: " + isPalindrome(str2));
-console.log("isStrictPalindrome: " + isPalindrome(str3));
+console.log("isStrictPalindrome: " + isStrictPalindrome2(str));
+console.log("isStrictPalindrome: " + isStrictPalindrome2(str2));
+console.log("isStrictPalindrome: " + isStrictPalindrome2(str3));
