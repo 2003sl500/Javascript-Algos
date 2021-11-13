@@ -106,4 +106,96 @@ function printArrayAverage(arr) {
 
 // printArrayAverage([3, 5, 8, 1, 38, 4, 9]);
 //----------------------------------------------------------------------------
-// start on page 74, with ReturnOddsArray1To255()
+
+function oddArray1to255() {
+    // create empty array
+    let arr = [];
+    // setup for loop, with max iterations
+    for (let i = 1; i < 256; i = i + 2) {
+        // add # to array
+        arr.push(i);
+    }
+    // return array
+    return arr;
+}
+
+// console.log(oddArray1to255().toString());
+//-----------------------------------------------------------------------------
+
+// function numGreaterThanY(arr, y) {
+//     var numGreater = 0;
+//     for (var idx = 0; idx < arr.length; idx++) {
+//         if (arr[idx] > y) {
+//             y++;
+//         }
+//     }
+//     console.log("%d values greater than %d", numGreater, y);
+// }
+
+function numGreaterThanY(arr, y) {
+    var numGreater = 0;
+    for (var idx = 0; idx < arr.length; idx++) {
+        if (arr[idx] > y) {
+            numGreater++;
+        }
+    }
+    console.log("%d values greater than %d", numGreater, y);
+}
+
+// numGreaterThanY([1,4,3,8,9,2,83,12], 6);
+//-----------------------------------------------------------------------------
+
+// function maxMinAverage(arr) {
+//     if (arr.length == 0) {
+//         console.log("[] arr, no min/max/avg");
+//         return;
+//     }
+//     var min = arr[0];
+//     var max = arr[0];
+//     var sum = arr[0];
+//     for (var idx = 1; idx <= arr.length; idx++) {
+//         if (arr[idx] < min) {
+//             min = arr[idx];
+//         }
+//         if (arr[idx] > max) {
+//             max = arr[idx];
+//         }
+//         sum += arr[idx];
+//     }
+//     console.log("Max val:", max);
+//     console.log("Min val:", min);
+//     console.log("Avg val:", sum / arr.length);
+//     return [max, min, avg];
+// }
+
+function maxMinAverage(arr) {
+    if (arr.length == 0) {
+        console.log("[] arr, no min/max/avg");
+        return;
+    }
+    var min = arr[0];
+    var max = arr[0];
+    var sum = arr[0];
+    for (var idx = 1; idx < arr.length; idx++) {
+        if (arr[idx] < min) {
+            min = arr[idx];
+        }
+        if (arr[idx] > max) {
+            max = arr[idx];
+        }
+        sum += arr[idx];
+    }
+    
+    var avg = sum / arr.length;
+
+    console.log("Max val:", max);
+    console.log("Min val:", min);
+    console.log("Avg val:", sum / arr.length);
+
+    return [max, min, avg];
+}
+
+// console.log(maxMinAverage([1,4,3,8,9,2,83,12]).toString());
+//-----------------------------------------------------------------------------
+
+// start on page 76, SquareArrayVals(arr)
