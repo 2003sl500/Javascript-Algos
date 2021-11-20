@@ -185,7 +185,7 @@ function maxMinAverage(arr) {
         }
         sum += arr[idx];
     }
-    
+
     var avg = sum / arr.length;
 
     console.log("Max val:", max);
@@ -198,4 +198,70 @@ function maxMinAverage(arr) {
 // console.log(maxMinAverage([1,4,3,8,9,2,83,12]).toString());
 //-----------------------------------------------------------------------------
 
-// start on page 76, SquareArrayVals(arr)
+// function squareArrVals(arr) {
+//     for (idx = 0; idx < arr.length; idx++) {
+//         arr[idx] = arr[idx * idx];
+//     }
+// }
+
+function squareArrVals(arr) {
+    for (idx = 0; idx < arr.length; idx++) {
+        arr[idx] = arr[idx] * arr[idx];
+    }
+    return arr;
+}
+
+// console.log(squareArrVals([2, 1, 3, 5, 8, 10]));
+//-----------------------------------------------------------------------------
+
+// function setNegsToZero(arr) {
+//     for (var idx = 1; idx < arr.length; idx++) {
+//         if (arr[idx] < 0) {
+//             arr[idx] = 0;
+//         }
+//     }
+// }
+
+function setNegsToZero(arr) {
+    for (var idx = 1; idx < arr.length; idx++) {
+        if (arr[idx] < 0) {
+            arr[idx] = 0;
+        }
+    }
+    return arr;
+}
+
+// console.log(setNegsToZero([2, 1, -3, 5, -8, 10]));
+//-----------------------------------------------------------------------------
+
+// function arrShift(arr) {
+//     for (var idx = 1; idx < arr.length; idx++) {
+//         arr[idx + 1] = arr[idx];
+//     }
+//     arr[arr.length - 1] = 0;
+//     return arr;
+// }
+
+function arrShift(arr) {
+    for (var idx = 0; idx < arr.length; idx++) {
+        console.log(idx);
+        arr[idx] = arr[idx + 1];
+    }
+    arr[arr.length - 1] = 0;
+    return arr;
+}
+
+// console.log(arrShift([2, 1, -3, 5, -8, 10]));
+//-----------------------------------------------------------------------------
+
+// No errors
+function subStringForNegs(arr) {
+    for (var idx = 0; idx < arr.length; idx++) {
+        if (arr[idx] <= 0) {
+            arr[idx] = "Dojo";
+        }
+    }
+    return arr;
+}
+
+console.log(subStringForNegs([2, 1, -3, 5, -8, 10]));
