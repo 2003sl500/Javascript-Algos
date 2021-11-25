@@ -43,7 +43,9 @@ let ll = new LinkedList();
 ll.insertFirst(100);
 ll.insertFirst(200);
 ll.insertFirst(300);
+ll.insertFirst(400);
+ll.insertFirst(500);
 
 // console.log(ll);
 
-ll.contains(200);
+ll.contains(300);
