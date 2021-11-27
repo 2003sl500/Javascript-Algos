@@ -15,7 +15,7 @@ class LinkedList {
     }
 
     // insert at first position
-    insertFirst(data) {
+    insertFront(data) {
         this.head = new Node(data, this.head);
     }
 
@@ -30,9 +30,9 @@ class LinkedList {
 }
 
 let ll = new LinkedList();
-ll.insertFirst(100);
-ll.insertFirst(200);
-ll.insertFirst(300);
-ll.insertFirst(400);
+ll.insertFront(100);
+ll.insertFront(200);
+ll.insertFront(300);
+ll.insertFront(400);
 
 console.log("Length: " + ll.len());
