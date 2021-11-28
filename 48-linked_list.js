@@ -151,7 +151,7 @@ ll.insertFirst(300);
 ll.insertLast(400);
 ll.insertAt(500, 2);
 ll.removeAt(3);
-ll.clearList();
+// ll.clearList();
 
 ll.printListData();
 console.log();
